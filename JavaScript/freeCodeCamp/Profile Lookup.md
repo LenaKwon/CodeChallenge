@@ -12,7 +12,7 @@ If `name` does not correspond to any contacts then return the string `No such co
 
 If `prop` does not correspond to any valid properties of a contact found to match `name` then return the string `No such property`.
 
-## before
+## Before
 ```javascript
 
 // Setup
@@ -53,7 +53,7 @@ lookUpProfile("Akira", "likes");
 
 ```
 
-## answers
+## Answers
 
 ```javascript
 
@@ -114,7 +114,7 @@ function lookUpProfile(name, prop) {
 
 ```
 
-## thinking 
+## Thinking 
 1. String of "No such Contact" should be returned after finishing the loop in the 'contacts'. 
 If the return statement is located `in the for loop`, then looping is stopped at the point before looping the whole contacts.
 2. Imagin the looping process and minimise unnecessary coding and simplify it rather than making code for the each condition.
