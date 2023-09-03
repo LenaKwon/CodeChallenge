@@ -1,4 +1,4 @@
-# Generate Random Fractions with JavaScript
+B# Generate Random Fractions with JavaScript
 
 Random numbers are useful for creating random behavior.
 
