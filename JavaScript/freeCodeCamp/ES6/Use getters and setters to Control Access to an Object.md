@@ -64,20 +64,60 @@ temp = thermos.temperature; // 26 in Celsius
 ```javascript
 // Only change code below this line
   class Thermostat {
-    conductor(F){
-    this._C =  5/9 * (F - 32);;
-  }
-  get temp() {
-    return this._C
-  }
-  set temp(C){
-    this._C = C;
-  }
+    constructor(fahrenheit){
+        this._fahrenheit = fahrenheit;
+    }
+    get temperature(){
+        return 5/9 * (this._fahrenheit - 32);
+    }
+    set temperature(celcius){
+        return this._fahrenheit = celcius * 9.0 / 5 + 32;
+    }
 }
+
 // Only change code above this line
 
 const thermos = new Thermostat(76); // Setting in Fahrenheit scale
 let temp = thermos.temperature; // 24.44 in Celsius
 thermos.temperature = 26;
 temp = thermos.temperature; // 26 in Celsius
+
+```
+## Thinking 
+
+```javascript
+//another example code for better understanding of getter and setter
+
+//why use getter and setter?
+//to be short, to correct the wrong input. 
+//imagine the coffee vending machine. 
+//if the user input the negative number of coffee, 
+//or in this code below what if the age input is negative?
+//that doesn't make sense, right?
+//this is why we need the getter and setter method to set the wrong value right.
+
+class User  {
+    construtor(firstName, lastName, age){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    // `this.age` call the get method first not reading the memory
+    // `= age;` call the set method and the value call the set method infinitely
+    // so variable name should be different to avoid call stack.
+    //'_' uncerscore precede the name of variable is convention way.
+    }
+    get age(){
+        return this._age;
+    }
+    set(value){
+        // if (value<0){
+        //     throw Error('age can not be negative');
+        // } 
+        this._age =age <0 ? 0 : value ;
+    }
+}
+
+const user1 = new User('Steve','Jobs','-1');
+console.log(user1.age);
+
 ```
