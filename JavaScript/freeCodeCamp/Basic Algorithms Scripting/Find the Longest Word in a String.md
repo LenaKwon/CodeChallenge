@@ -30,3 +30,6 @@ function findLongestWordLength(str) {
   return Math.max(...str.split(" ").map(word => word.length));
 }
 ```
+## thinking
+string have a property of length not only Array..
+(String:length)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length]
