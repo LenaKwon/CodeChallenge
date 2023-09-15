@@ -32,4 +32,4 @@ function findLongestWordLength(str) {
 ```
 ## thinking
 string have a property of length not only Array..
-(String:length)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length]
+[String:length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
