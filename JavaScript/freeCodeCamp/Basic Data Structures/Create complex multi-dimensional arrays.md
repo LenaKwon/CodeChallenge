@@ -45,6 +45,7 @@ so that it has exactly five levels of depth (remember, the outer-most array is l
 Somewhere on the third level, include the string deep, on the fourth level, include the string deeper, and on the fifth level, include the string deepest.
 
 ## Before
+```javascript
 let myNestedArray = [
   // Only change code below this line
   ['unshift', false, 1, 2, 3, 'complex', 'nested'],
@@ -54,7 +55,9 @@ let myNestedArray = [
   ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
   // Only change code above this line
 ];
+```
 ## Answers
+```javascript
 let myNestedArray = [
   // Only change code below this line
   ['unshift', false, 1, 2, 3, 'complex', 'nested'],
@@ -64,3 +67,4 @@ let myNestedArray = [
   ['iterate', 1.3849, 7, '8.4876',['hello',['world',['deepest']]], 'arbitrary', 'depth']
   // Only change code above this line
 ];
+```
