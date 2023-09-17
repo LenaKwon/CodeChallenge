@@ -1,6 +1,6 @@
 
-# Why this repos ?
-I create this repos for saving all my progress with some code challenge. 
+# To save my progress of code challenge with freeCodeCamp
+
 
 
 
