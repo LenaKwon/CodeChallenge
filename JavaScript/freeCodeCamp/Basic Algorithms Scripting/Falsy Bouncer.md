@@ -36,6 +36,11 @@ function bouncer(arr) {
   return arr.filter(Boolean);
 }
 ```
-### Code Explanation
+## Code Explanation
 The `Array.prototype.filter` method expects a function that returns a `Boolean` value which takes a single argument 
 and returns `true` for truthy value or `false` for falsy value. Hence we pass the `built-in Boolean function`.
+
+## Need to know
+[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)</br>
+[Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)</br>
+[Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
