@@ -24,4 +24,10 @@ function getIndexToIns(arr, num) {
 }
 getIndexToIns([40, 60], 50);
 ```
-
+```javascript
+//short code
+function getIndexToIns(arr, num) {
+    return arr.push(num).sort((a,b)=>a-b).indexOf(num); 
+}
+getIndexToIns([40, 60], 50);
+```
